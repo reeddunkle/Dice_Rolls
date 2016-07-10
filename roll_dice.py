@@ -2,7 +2,7 @@
     roll_dice
     ~~~~~~~~~
 
-    Roll a die. Optionally weight the die, and specify the weight.
+    Roll a die. Optionally weigh the die, and specify the weight.
 '''
 
 
