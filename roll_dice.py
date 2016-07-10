@@ -62,6 +62,7 @@ def gen_parser():
     parser.add_argument('-w', '--weigh', dest='side_weighted', required=False, nargs='?', default=None, type=int, help='Weigh the die for this side.')
     parser.add_argument('-p', '-1/', '--prob', dest='weight', required=False, nargs='?', default=None, type=int, help='The probability the weighed side will be rolled. 1/x rolls will be the weighted roll.')
     parser.add_argument('-db', '--debug', dest='debug', required=False, nargs='?', default=False, type=bool, help='Set to True to see the values generated.')
+
     return parser
 
 
