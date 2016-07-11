@@ -45,7 +45,7 @@ python rolle_dice.py 6 -d 5 --sort
 # Die 5: 2
 ```
 
-Roll Dice easily from your terminal
+Add alias to roll from anywhere
 ----
 
 **Create an alias in your `.bashrc` file**
