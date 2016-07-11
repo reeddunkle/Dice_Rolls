@@ -38,11 +38,11 @@ To sort the rolls from highest to lowest, include the `--sort` (`-s`) flag:
 ```
 python rolle_dice.py 6 -d 5 --sort
 
-# Die 1: 5
-# Die 2: 5
-# Die 3: 4
-# Die 4: 3
-# Die 5: 2
+# => Die 1: 5
+# => Die 2: 5
+# => Die 3: 4
+# => Die 4: 3
+# => Die 5: 2
 ```
 
 Add alias to roll from anywhere
@@ -82,11 +82,11 @@ roll 6
 
 roll 20 -d 5 --sort
 
-# Die 1: 11
-# Die 2: 11
-# Die 3: 10
-# Die 4: 6
-# Die 5: 1
+# => Die 1: 11
+# => Die 2: 11
+# => Die 3: 10
+# => Die 4: 6
+# => Die 5: 1
 ```
 
 Roll weighted dice
@@ -136,11 +136,11 @@ dice = Dice(sides=20, num_dice=5, sort=True)
 ```
 dice.roll()
 
-# Die 1: 20
-# Die 2: 16
-# Die 3: 13
-# Die 4: 6
-# Die 5: 2
+# => Die 1: 20
+# => Die 2: 16
+# => Die 3: 13
+# => Die 4: 6
+# => Die 5: 2
 ```
 
 Create weighted dice
@@ -152,9 +152,9 @@ An example of weighted dice:
 dice = Dice(sides=6, side_weighted=6, weight=2, num_dice=5)
 dice.roll()
 
-# Die 1: 3
-# Die 2: 4
-# Die 3: 3
-# Die 4: 6
-# Die 5: 6
+# => Die 1: 3
+# => Die 2: 4
+# => Die 3: 3
+# => Die 4: 6
+# => Die 5: 6
 ```
