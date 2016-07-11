@@ -142,10 +142,10 @@ if __name__ == '__main__':
         print("Die {}: {}".format(i+1, r))
 
     if debug:
-        if side_weighted == None:
-            side_weighted = 'all sides'
+        if side_weighted == None and weight == None:
+            message = 'With no side weighted, the numbers chosen from are:\n{}'.format(sorted(numbers))
 
-        if weight == None:
-            weight = num_sides
+        else:
+            message = 'With {} being rolled every 1/{} rolls, the numbers to choose from are \n{}\n'.format(side_weighted, weight, sorted(numbers))
 
-        print('With {} being rolled every 1/{} rolls, the numbers to choose from are \n{}\n'.format(side_weighted, weight, sorted(numbers)))
+        print(message)
