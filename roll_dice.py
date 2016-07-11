@@ -146,6 +146,6 @@ if __name__ == '__main__':
             message = 'With no side weighted, the numbers chosen from are:\n{}'.format(sorted(numbers))
 
         else:
-            message = 'With {} being rolled every 1/{} rolls, the numbers to choose from are \n{}\n'.format(side_weighted, weight, sorted(numbers))
+            message = 'With {} being rolled every 1 out of {} rolls, the numbers to choose from are \n{}\n'.format(side_weighted, weight, sorted(numbers))
 
         print(message)

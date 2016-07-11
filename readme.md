@@ -56,7 +56,7 @@ Edit your file:
 subl ~/.bashrc
 ```
 
-At the bottom, or with your other aliases, add the following code. *Make sure that you add in the full path from your home (`~`) directory to the github repo. (Leave included the directory names that I have in the example path below.)*
+At the bottom, or with your other aliases, add the following code. *Make sure that you edit this to include the full path from your home (`~`) directory to the github repo. (Leave included the directory names that I have in the example path below.)*
 
 ```
 # Roll dice from your terminal
@@ -67,7 +67,7 @@ Now you can type `roll`, and it will execute what is on the other side of the eq
 
 The two major advantages of doing this are:
 
-1. You can be in any directory to execute this command. Without the alias, all of the executions you see below, when it says `python roll_dice.py ...` you have to be in the current directory to use it.
+1. You can be in any directory to execute this command. Without the alias, all of the executions you see below, when it says `python roll_dice.py ...` you have to be in the `Dice_Rolls` directory to use it.
 
 2. You don't have to tell it what script to execute (`roll_dice.py`) or with what program to interpret it (`python`).
 
@@ -107,12 +107,15 @@ To run debugging mode, include the --debug (`-db`) flag and the list of numbers 
 
 ```
 python roll_dice.py 6 -w 6 -p 2 -db
+Die 1: 3
+With 6 being rolled every 1 out of 2 rolls, the numbers to choose from are
+[1, 2, 3, 4, 5, 6, 6, 6, 6, 6]
 ```
 
 Create a set of Dice objects in your code
 ----
 
-Let's say that you're playing D&D, and you need five 20-sided dice.
+Let's say you're playing D&D, and you need five 20-sided dice.
 
 - Navigate to the directory (`cd Dice_Rolls`)
 - From the root directory, start a python repl by simply typing `python` into the command line.
@@ -122,7 +125,7 @@ Let's say that you're playing D&D, and you need five 20-sided dice.
 from roll_dice import Dice
 ```
 
-- Create your five dice (optional--setting `sort=True` will display the rolls highest to lowest):
+- Create your five dice (optionally you can set `sort=True` to display the rolls highest to lowest):
 
 ```
 dice = Dice(sides=20, num_dice=5, sort=True)
